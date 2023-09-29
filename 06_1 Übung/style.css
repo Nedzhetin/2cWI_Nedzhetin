@@ -13,6 +13,7 @@ body{
 }
 
 #boxMain{
+    position: relative;
     margin-top: 20px;
     margin-left: 20px;
     width: 460px;
@@ -22,8 +23,8 @@ body{
 
 #boxSmall{
     position: absolute;
-    top: 220px;
-    right: 66.66%;
+    bottom:0;
+    right: 0;
     width: 100px;
     height: 100px;
     background-color:rgb(149, 77, 10);
