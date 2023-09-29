@@ -1,0 +1,50 @@
+body{
+    margin: 0 auto;
+}
+
+
+#boxRight{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 50px;
+    height: 50px;
+    background-color: purple;
+}
+
+#boxMain{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 460px;
+    height: 300px;
+    background-color: lightblue;
+}
+
+#boxSmall{
+    position: absolute;
+    top: 220px;
+    right: 66.66%;
+    width: 100px;
+    height: 100px;
+    background-color:rgb(149, 77, 10);
+}
+
+#header{
+    padding: 20px;
+}
+
+#container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    background-color: yellow;
+    width: 100%;
+    height: 150px;
+}
+
+.boxes{
+    background-color: green;
+    width: 50px;
+    height: 50px;
+}
