@@ -1,0 +1,17 @@
+.boxBlue{
+    position: relative;
+    width: 260px;
+    height: 460px;
+    background-color: aqua;
+    margin-top: 140px;
+    margin-left: 40px;
+}
+
+.boxRight{
+    position: absolute;
+   width: 40px;
+   height: 40px;
+   background-color: green;
+   bottom: 0;
+   right: 0;
+}
