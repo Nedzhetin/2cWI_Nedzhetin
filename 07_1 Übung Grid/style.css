@@ -1,0 +1,37 @@
+
+
+.container1{
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    border: solid black 2px;
+    margin: 100px;
+    width: 612px;
+    height: 520px;
+}
+
+.box{
+    background-color: green;
+    border: solid black 2px;
+    height: 100px;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.container2{
+    display: grid;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    grid-template-columns: 300px 300px ;
+    border: solid black 2px;
+    margin: 100px;
+    width: 612px;
+    height: 520px;
+}
+
+.boxBig{
+    background-color: green;
+    height: 200px;
+    border: solid black 2px;
+    margin: 30px;
+}
