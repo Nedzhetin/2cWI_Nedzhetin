@@ -1,0 +1,15 @@
+.boxSmall{
+    border: solid black 2px;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+.boxBig{
+    border: solid black 2px;
+    width: 300px;
+    height: 150px;
+    margin: 10px;
+}
+
+@media()
