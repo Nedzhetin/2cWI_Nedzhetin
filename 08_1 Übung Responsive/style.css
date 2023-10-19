@@ -5,16 +5,45 @@
     margin: 10px;
 }
 
-.boxBig{
+.boxBig1{
     border: solid black 2px;
-    width: 300px;
-    height: 150px;
-    margin: 10px;
+    width: 55vw;
+    height: 30vw;
+    margin-top: 40px;
+}
+
+.boxBig2{
+    position: absolute;
+    right: 0px;
+    top: 212px;
+    border: solid black 2px;
+    width: 40vw;
+    height: 30vw;
+    margin-top: 40px;
+    margin-right: 40px;
 }
 
 .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     border: black solid 2px;
-    width: 600px;
+    width: 99vw;
     height: 200px;
 }
 
+@media (max-width: 800px){
+
+    .container{
+      display: block;
+      border: 0px;
+    }
+    .boxBig1{
+        position: absolute;
+        top: 43vh;
+    }
+    .boxBig2{
+        top: 76vh;
+        left: 0px;
+    }
+}
