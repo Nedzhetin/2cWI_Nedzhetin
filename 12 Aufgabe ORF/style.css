@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    font-family: "ORF ON",Arial,Helvetica,Lucida Sans Unicode,Lucida Grande,sans-serif;
+font-feature-settings: "liga", "kern"
+}
+.header{
+    width: 100vw;
+    height: 190px;
+    background-color: #BA131Aed;
+}
+
+.topHeader{
+    width: 100vw;
+    height: 40px;
+    background-color: #9D0B0E;
+}
+
+.bottomHeader{
+    width: 100vw;
+    height: 40px;
+    margin-top: 110px;
+    background-color: #9D0B0E;
+}
+
+.ul li{
+    display:inline-block;
+    color: white;
+    margin-left: 40px;
+}
