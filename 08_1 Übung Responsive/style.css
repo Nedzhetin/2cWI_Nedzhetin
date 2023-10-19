@@ -12,4 +12,9 @@
     margin: 10px;
 }
 
-@media()
+.container{
+    border: black solid 2px;
+    width: 600px;
+    height: 200px;
+}
+
