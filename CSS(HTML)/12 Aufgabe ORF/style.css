@@ -99,3 +99,11 @@ font-feature-settings: "liga", "kern"
 .textTwo{
     font-size: 25px;
 }
+
+
+.bell{
+    position: absolute;
+    color: white;
+    top: 160px;
+    right: 20px;
+}
