@@ -18,15 +18,21 @@
 let banana = "Banane";
 let apple = "Apple";
 
+let appleWeight = 0.34;
+let bananaWeight = 0.22;
+
+
 let bananaPricePerKilo = 2.14;
 let applePricePerKilo = 3.43;
 
-
-
-let oneApplePrice = (0.34 * bananaPricePerKilo);
+let oneApplePrice = (0.34 * applePricePerKilo);
 let oneBananaPrice = (0.22 * bananaPricePerKilo);
 
+let bananaProKilo = 1/bananaWeight;
+let appleProKilo = 1/appleWeight;
 
+console.log("bananaProKilo = "  + bananaProKilo);
+console.log("appleProKilo = "  + appleProKilo);
 console.log("Preis von 8 Äpfeln = "  + oneApplePrice.toFixed(2) * 8);
 console.log("Preis von 17 Bananen = "  + oneBananaPrice.toFixed(2) * 17);
 console.log("Preis von 1 Tonne Äpfel = "  + oneApplePrice.toFixed(2) * 1000);
