@@ -18,5 +18,10 @@ console.log("Enter your name");
 let Username = await readLineAsync();
 console.log(Username);
 
+console.log("Enter your age");
+let age = await readLineAsync();
+console.log(age);
+
+
 
 readline.close();
