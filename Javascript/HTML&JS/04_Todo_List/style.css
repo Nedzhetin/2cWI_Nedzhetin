@@ -1,0 +1,133 @@
+*{
+    box-sizing:border-box ;
+    margin: 0 ;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgb(58, 62, 62);
+    color: rgb(239, 245, 251);
+}
+
+.header{
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    font-size: 60px;
+    text-shadow: ;
+    box-shadow: 19px 17px 19px 0px rgb(13, 143, 160);
+    text-shadow: 0 0 5px #FFF,
+             0 0 10px #FFF,
+             0 0 15px #FFF,
+             0 0 20px #15aacc,
+             0 0 30px #15aacc,
+             0 0 40px #15aacc,
+             0 0 55px #15aacc,
+             0 0 75px #15aacc;}
+
+.person{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    text-shadow:2px 2px 2px rgba(201, 58, 14, 0);
+    text-shadow: 0 0 5px #FFF,
+             0 0 10px #FFF,
+             0 0 15px #FFF,
+             0 0 20px #15aacc,
+             0 0 30px #15aacc,
+             0 0 40px #15aacc,
+             0 0 55px #15aacc,
+             0 0 75px #15aacc;}
+
+
+.person:hover {
+    animation-name: red;
+    animation-duration: 1s;
+}
+
+@keyframes red {
+    100%{
+        color: red;
+    }
+}
+
+
+.givenText{
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        margin-top: 100px;
+        margin-left: 400px;
+        margin-right: 400px;
+}
+
+.item{
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        font-size: 40px;
+        margin: 50px;    
+}
+
+.textBox{
+    height: 60px;
+    flex: 1 1 0%;
+    background-color: #181515;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    font-size: xx-large;
+    color: #FFF;
+    
+    
+
+}
+
+.ToDoButton{
+    border: none;
+    font-size: 40px;
+    background: #11C9CF;
+    background: linear-gradient(to right, #4FC6CF 0%, #0A1ECF 100%);    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;    
+}
+
+.ToDoButton:hover{
+    opacity: 0.5;
+}
+
+.paragraphStyle{
+    box-shadow: 19px 17px 19px 0px rgba(13,7,13,1);
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(179, 179, 191);
+    height: 60px;
+    flex: 1 1 0%;
+    background-color: #181515;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    font-size: xx-large;
+    color: #FFF;
+}
+.list{
+    margin-left: 300px;
+    margin-right: 300px;
+}
+.deleteButton{
+    border: none;
+    font-size: 40px;
+    background: #11C9CF;
+    background: linear-gradient(to right, #4FC6CF 0%, #0A1ECF 100%);    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;    
+}
+
+.deleteButton:hover{
+    opacity: 0.5;
+}
+
