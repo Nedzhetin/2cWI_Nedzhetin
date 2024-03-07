@@ -1,0 +1,36 @@
+* {
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  height: 100vh;
+}
+
+.header {
+  height: 15%;
+  border-bottom: solid black 2px;
+}
+
+.content {
+  display: flex;
+  height: 85%;
+}
+
+.sidebar {
+  position: absolute;
+  height: 85%;
+  width: 13%;
+  border-left: solid black 2px;
+  right: 0;
+  background-color: rgb(174, 17, 54);
+}
+
+.article {
+  width: 60%;
+  height: 30%;
+  background-color: rgb(212, 18, 18);
+  border: solid black 2px;
+  border-radius: 30px;
+  margin: 8%;
+}
