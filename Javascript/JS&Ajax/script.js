@@ -1,3 +1,5 @@
 document.getElementById("load").addEventListener("click", function () {
-  alert("jsdlfk");
+  alert("sdkljf");
 });
+
+console.log("lksdjf");
