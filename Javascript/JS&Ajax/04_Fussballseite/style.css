@@ -1,0 +1,94 @@
+* {
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  height: 100vh;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 15vh; /*sdfjsdlkfj*/
+  background-color: white;
+  border-bottom: 2px solid black;
+  z-index: 2;
+}
+
+.image {
+  position: absolute;
+  right: 2%;
+  top: 0;
+  height: 100px;
+  width: 100px;
+}
+
+.imageText {
+  width: 500px;
+  margin: 15px;
+}
+
+.headerText {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 50px;
+}
+
+.content {
+  display: flex;
+  margin-top: 15vh; /*sdfjsdlkfj*/
+  height: 85%;
+}
+
+.sidebar {
+  position: absolute;
+  position: fixed;
+  height: 85%;
+  width: 13%;
+  border-left: solid black 2px;
+  right: 0;
+  background-color: rgb(174, 17, 54);
+}
+
+.articleWrapper {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 5;
+}
+
+.article {
+  display: flex;
+  position: relative;
+  width: 60%;
+  height: 70%; /*Ggfddddddddddddddddddddddddddddsjklög*/
+  background-color: rgb(212, 18, 18);
+  border: solid black 2px;
+  border-radius: 30px;
+  margin: 8%;
+}
+
+.teamLogo {
+  position: absolute;
+  top: 10px;
+  width: 150px;
+  height: 150px;
+  z-index: 0;
+}
+
+.One {
+  left: 50px;
+}
+.Two {
+  right: 50px;
+}
+
+.score {
+  font-size: 50px;
+  font-weight: 600;
+  font-style: italic;
+  align-self: center;
+}
