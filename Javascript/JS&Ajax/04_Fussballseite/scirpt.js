@@ -1,37 +1,77 @@
 let ligs = [
-  " Österreichische Bundesliga 2023/24",
-  "3. Fußball-Bundesliga 2023/2024",
-  " 2. Fußball-Bundesliga 2023/2024",
-  " 1. Fußball-Bundesliga 2023/2024",
-  " 3. Fußball-Bundesliga 2022/2023",
-  " 2. Fußball-Bundesliga 2022/2023",
-  "1. Fußball-Fan-Bundesliga 2022/2023",
+  {
+    title: " Österreichische Bundesliga 2023/24",
+    leaugeShortcut: "öbl1",
+    season: "2023",
+  },
+  {
+    title: "3. Fußball-Bundesliga 2023/2024",
+    leaugeShortcut: "bl3",
+    season: "2023",
+  },
+  {
+    title: "2. Fußball-Bundesliga 2023/2024",
+    leaugeShortcut: "bl2",
+    season: "2023",
+  },
+  {
+    title: "1. Fußball-Bundesliga 2023/2024",
+    leaugeShortcut: "bl1",
+    season: "2023",
+  },
+  {
+    title: "3. Fußball-Bundesliga 2022/2023",
+    leaugeShortcut: "bl3de",
+    season: "2022",
+  },
+  {
+    title: "2. Fußball-Bundesliga 2022/2023",
+    leaugeShortcut: "bl2",
+    season: "2022",
+  },
+  {
+    title: "1. Fußball-Bundesliga 2022/2023",
+    leaugeShortcut: "bl1",
+    season: "2022",
+  },
 ];
 
-for (let i = 0; i < ligs.length; i++) {
-  let listElement = document.createElement("li");
-  listElement.innerHTML = ligs[i];
-  document.getElementById("ul").appendChild(listElement);
-  listElement.addEventListener("click", function () {
-    console.log(listElement);
-  });
-}
-
-async function data() {
+async function data(currentLeauge) {
   try {
     let result = await fetch(
-      "https://api.openligadb.de/getmatchdata/%C3%B6bl1/2023"
+      "https://api.openligadb.de/getmatchdata/" +
+        ligs[currentLeauge].leaugeShortcut +
+        "/" +
+        ligs[currentLeauge].season
     );
     let teamInfo = await fetch(
-      "https://api.openligadb.de/getavailableteams/%C3%B6bl1/2023"
+      "https://api.openligadb.de/getavailableteams/" +
+        ligs[currentLeauge].leaugeShortcut +
+        "/" +
+        ligs[currentLeauge].season
     );
     let data = await result.json();
     teamInfo = await teamInfo.json();
+
+    document.getElementById("articles").innerHTML = "";
+    // zuerst leer machen und dann die logos logen
 
     fillLogo(data, teamInfo);
   } catch (e) {
     console.log(e);
   }
+}
+
+for (let i = 0; i < ligs.length; i++) {
+  let listElement = document.createElement("li");
+  listElement.innerHTML = ligs[i].title;
+  document.getElementById("ul").appendChild(listElement);
+  listElement.addEventListener("click", function () {
+    console.log(listElement);
+    let currentLeauge = i;
+    console.log(currentLeauge);
+    data(currentLeauge);
+  });
 }
 
 const fillLogo = (data, teamInfo) => {
@@ -71,14 +111,5 @@ const fillLogo = (data, teamInfo) => {
     score = "";
   }
 };
-
-function loadNewDate() {
-  for (let i = 0; i < ligs.length; i++) {
-    let listElement = document.createElement("li");
-    listElement.innerHTML = ligs[i];
-    console.log(listElement);
-    document.getElementById("ul").appendChild(listElement);
-  }
-}
 
 data();
