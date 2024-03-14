@@ -13,6 +13,7 @@
   left: 0;
   width: 100%;
   height: 15vh; /*sdfjsdlkfj*/
+  box-shadow: 5px 3px 8px 5px #888888;
   background-color: white;
   border-bottom: 2px solid black;
   z-index: 2;
@@ -27,29 +28,14 @@
 }
 
 .imageText {
-  width: 500px;
+  width: 300px;
   margin: 15px;
-}
-
-.headerText {
-  font-family: "Courier New", Courier, monospace;
-  font-size: 50px;
 }
 
 .content {
   display: flex;
   margin-top: 15vh; /*sdfjsdlkfj*/
   height: 85%;
-}
-
-.sidebar {
-  position: absolute;
-  position: fixed;
-  height: 85%;
-  width: 13%;
-  border-left: solid black 2px;
-  right: 0;
-  background-color: rgb(174, 17, 54);
 }
 
 .articleWrapper {
@@ -65,6 +51,8 @@
   position: relative;
   width: 60%;
   height: 70%; /*Ggfddddddddddddddddddddddddddddsjklög*/
+  box-shadow: 3px 3px 3px 3px #888888;
+
   background-color: rgb(212, 18, 18);
   border: solid black 2px;
   border-radius: 30px;
@@ -72,11 +60,18 @@
 }
 
 .teamLogo {
+  display: flex;
   position: absolute;
-  top: 10px;
-  width: 150px;
-  height: 150px;
+  align-self: center;
+  width: 120px;
+  height: 120px;
   z-index: 0;
+}
+
+.teamLogo > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .One {
@@ -88,7 +83,38 @@
 
 .score {
   font-size: 50px;
-  font-weight: 600;
-  font-style: italic;
+  font-weight: 400;
   align-self: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul > li {
+  position: relative;
+  padding: 20px;
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border-bottom: solid black 2px;
+}
+
+.sidebar {
+  position: absolute;
+  position: fixed;
+  height: 85%;
+  width: 20%;
+  z-index: 3;
+  border-left: solid black 2px;
+  right: 0;
+  background-color: rgb(174, 17, 54);
+}
+
+.backgroundImg {
+  position: absolute;
+  position: fixed;
+  top: 0;
+  width: 80%;
+  height: 100%;
 }
