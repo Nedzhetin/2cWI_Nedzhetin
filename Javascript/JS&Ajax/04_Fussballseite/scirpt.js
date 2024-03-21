@@ -62,14 +62,23 @@ async function data(currentLeauge) {
   }
 }
 
+let previousLi = null;
+
+function changeColor(li) {
+  li.style.backgroundColor = "white";
+  if (previousLi !== null) {
+    previousLi.style.backgroundColor = "grey";
+  }
+  previousLi = li;
+}
+
 for (let i = 0; i < ligs.length; i++) {
   let listElement = document.createElement("li");
   listElement.innerHTML = ligs[i].title;
   document.getElementById("ul").appendChild(listElement);
   listElement.addEventListener("click", function () {
-    console.log(listElement);
+    changeColor(listElement);
     let currentLeauge = i;
-    console.log(currentLeauge);
     data(currentLeauge);
   });
 }
