@@ -79,6 +79,12 @@
   align-self: center;
 }
 
+.align {
+  display: flex;
+  align-self: baseline;
+  background-color: antiquewhite;
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -116,6 +122,19 @@ li:hover {
   height: 120%;
 }
 
-.article :hover {
-  height: 200px;
+.clickedArticel {
+  height: 400px;
+}
+
+.showMoreButton {
+  position: absolute;
+  bottom: 0;
+  left: 45%;
+  height: 40px;
+  background-color: rgb(144, 134, 134);
+  border: none;
+}
+
+.showMoreButton:hover {
+  cursor: pointer;
 }
