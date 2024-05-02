@@ -87,7 +87,6 @@ const fillLogo = (data, teamInfo) => {
   let img1 = "";
   let img2 = "";
   let score = "";
-  let details = "<button class='showMoreButton'> show more </button>";
 
   for (let i = 0; i <= 10; i++) {
     img1 +=
@@ -111,13 +110,19 @@ const fillLogo = (data, teamInfo) => {
       data[i].matchResults[1].pointsTeam2 +
       "</p>";
 
+    let showMoreButton = document.createElement("button");
+    showMoreButton.textContent = "Show more";
+    showMoreButton.classList.add("showMoreButton");
+
     article = document.createElement("div");
-    article.innerHTML = img1 + score + img2 + details;
+    article.innerHTML = img1 + score + img2;
+    article.appendChild(showMoreButton);
     article.classList.add("article");
     document.getElementById("articles").appendChild(article);
-    article.addEventListener("click", function (event) {
+
+    showMoreButton.addEventListener("click", function () {
       console.log("clicked");
-      event.target.classList.add("clickedArticel");
+      this.closest(".article").classList.toggle("expanded");
     });
 
     img1 = "";
